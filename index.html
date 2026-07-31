@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELTA Flight Tracking</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<div class="logo">
+<h1>ELTA</h1>
+</div>
+
+<div class="tracking">
+<h2>Flight Tracking</h2>
+<p>Track your itinerary</p>
+</div>
+</header>
+
+<div class="search-box">
+
+<h2>Track Your Flight</h2>
+
+<input type="text" id="trackingCode" placeholder="Enter Tracking Code">
+
+<button onclick="checkFlight()">
+Track Flight
+</button>
+
+</div>
+
+<div id="ticket" style="display:none;">
+
+<div class="top">
+
+<h2>Hello, HEIDI GRAY</h2>
+
+<h3>Tracking Code: 247763</h3>
+
+</div>
+
+<div class="confirmation">
+
+<h3>Your Trip Confirmation #: GE3VP2</h3>
+
+<button>MANAGE MY TRIP ></button>
+
+</div>
+
+<p>
+
+Thank you for choosing ELTA. This information is a copy of your itinerary and not a receipt.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Date</th>
+
+<th>Departure</th>
+
+<th>Arrival</th>
+
+</tr>
+
+<tr>
+
+<td>01/08/2026</td>
+
+<td>
+
+<b>Switzerland</b><br>
+
+12:00 AM
+
+</td>
+
+<td>
+
+<b>Sweden</b><br>
+
+10:50 PM
+
+</td>
+
+</tr>
+
+</table>
+
+<div class="flight">
+
+<p><strong>Passenger:</strong> Heidi Gray</p>
+
+<p><strong>Flight Number:</strong> 24212</p>
+
+<p><strong>Tracking Code:</strong> 247763</p>
+
+</div>
+
+<div class="notice">
+
+<h3>Travel Information</h3>
+
+<p>
+
+Arrival date is different than departure date.
+
+</p>
+
+<p>
+
+Flight 3306 Operated by ENDEAVOR AIR DBA DELTA CONNECTION.
+
+</p>
+
+<p>
+
+Baggage and check-in requirements vary by airport and airline.
+
+</p>
+
+<p>
+
+You must check in at least 45 minutes before departure.
+
+</p>
+
+</div>
+
+<div class="advisory">
+
+<h2>Advisory</h2>
+
+<p>
+
+Due to renovation work, passengers departing from Dallas-Fort Worth International Airport (DFW) should use the E18 security checkpoint, then follow signs to Terminal E Satellite Gates 25 through 30.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function checkFlight(){
+
+let code=document.getElementById("trackingCode").value;
+
+if(code==="247763"){
+
+document.getElementById("ticket").style.display="block";
+
+}else{
+
+alert("Invalid Tracking Code");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
